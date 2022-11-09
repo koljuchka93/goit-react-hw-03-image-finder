@@ -1,3 +1,5 @@
+import { Button } from "./Button/Button";
+
 export const App = () => {
   return (
     <div
@@ -11,6 +13,7 @@ export const App = () => {
       }}
     >
       React homework template
+      <Button/>
     </div>
   );
 };

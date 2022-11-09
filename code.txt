@@ -2,3 +2,10 @@ Search Images
 GEThttps://pixabay.com/api/
 Parameters
 key (required)	str	Your API key: 24125132-03a45b117457a16fcdb616627
+
+Use in App.jsx
+
+const fetchImages - on button
+const ImageGallery as Gallery
+const Loader - spinner
+const Modal 
