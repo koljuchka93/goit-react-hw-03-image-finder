@@ -1,7 +1,7 @@
 import { useState } from 'react';
 // import PropTypes from 'prop-types';
 
-const SearchFrom = ({ onSearch }) => {
+export const SearchFrom = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
   // Спостергігає за інпутом і пише значння в стейт
@@ -28,7 +28,7 @@ const SearchFrom = ({ onSearch }) => {
   const resetForm = () => setQuery('');
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <button type="submit">
         <span>Search</span>
       </button>
@@ -46,7 +46,7 @@ const SearchFrom = ({ onSearch }) => {
   );
 };
 
-const Searchbar = ({ onSearch }) => (
+export const Searchbar = ({ onSearch }) => (
   <header>
     <SearchFrom onSearch={onSearch} />
   </header>

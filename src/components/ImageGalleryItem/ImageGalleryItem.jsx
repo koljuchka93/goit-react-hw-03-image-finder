@@ -1,6 +1,6 @@
 // import PropTypes from 'prop-types';
 
-const ImageGalleryItem = ({ image, onImageClick }) => {
+export const ImageGalleryItem = ({ image, onImageClick }) => {
   const fullImage = () => onImageClick(image.largeImageURL);
 
   return (
@@ -14,11 +14,5 @@ const ImageGalleryItem = ({ image, onImageClick }) => {
   );
 };
 
-ImageGalleryItem.defaultProps = {
-  tags: '',
-};
 
 
-{/* <li class="gallery-item">
-  <img src="" alt="" />
-</li> */}

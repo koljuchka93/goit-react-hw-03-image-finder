@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types';
-import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
+import { ImageGalleryItem } from "components/ImageGalleryItem/ImageGalleryItem";
 
-const ImageGallery = ({ images, onImageClick }) => (
+export const ImageGallery = ({ images, onImageClick }) => (
   <ul>
     {images.map(image => {
       return (
@@ -17,7 +17,3 @@ const ImageGallery = ({ images, onImageClick }) => (
 
 
 
-
-{/* <ul class="gallery">
-  Набір <li> із зображеннями 
-</ul> */}

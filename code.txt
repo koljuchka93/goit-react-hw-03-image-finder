@@ -9,3 +9,19 @@ const fetchImages - on button
 const ImageGallery as Gallery
 const Loader - spinner
 const Modal 
+const Searchbar
+
+
+<div
+      style={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 40,
+        color: '#010101'
+      }}
+    >
+      React homework template
+      <Button/>
+    </div>

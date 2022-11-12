@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 const modalRoot = document.querySelector('#modal-root');
 
-const Modal = ({ children, onClose }) => {
+export const Modal = ({ children, onClose }) => {
   // Додає слухачі (mount)
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
@@ -30,17 +30,9 @@ const Modal = ({ children, onClose }) => {
   };
 
   return createPortal(
-    <div className={styles.Overlay} onClick={handleBackdropClick}>
-      <div className={styles.Modal}>{children}</div>
+    <div  onClick={handleBackdropClick}>
+      <div>{children}</div>
     </div>,
     modalRoot,
   );
 };
-
-
-
-{/* <div class="overlay">
-  <div class="modal">
-    <img src="" alt="" />
-  </div>
-</div> */}
