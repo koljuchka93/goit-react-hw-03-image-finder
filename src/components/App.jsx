@@ -49,7 +49,7 @@ export const App = () => {
         scrollOnLoadButton();
       }
     } catch (error) {
-      console.log('Smth wrong with App fetch', error);
+      console.log('Something wrong with App', error);
     } finally {
       setLoading(false);
     }
