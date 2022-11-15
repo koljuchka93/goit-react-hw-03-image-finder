@@ -83,7 +83,7 @@ export const App = () => {
 
     <ImageGallery images={images} onImageClick={handleGalleryItem} />
 
-    {needToShowLoadMore && <Button onClick={getImages} />}
+    {needToShowLoadMore && <Button onLoadMore={getImages} />}
 
     {showModal && (
       <Modal onClose={toggleModal}>
