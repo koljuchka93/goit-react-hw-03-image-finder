@@ -30,7 +30,7 @@ export const SearchFrom = ({ onSearch }) => {
     return (
       <SchForm onSubmit={handleSubmit}>
         <SchFormBtn type="submit">
-          <span>Search</span>
+          <span>GO!</span>
         </SchFormBtn>
   
         <SchFormInpt
